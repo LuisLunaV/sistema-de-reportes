@@ -1,0 +1,62 @@
+/* Resolcion para dispositivos moviles muy pequeños: */
+@media (max-width: 575px) {
+}
+
+/* Resolcion para dispositivos moviles pequeños: */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Resolcion para tablets: */
+@media (min-width: 768px) and (max-width: 991px) {
+  .radios-date {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .mis-servicios aside {
+    width: 40%;
+  }
+  .mis-servicios main {
+    width: 60%;
+  }
+}
+
+/* Resolcion para pc de escritorio:  */
+@media (min-width: 972px) {
+  .radios-date {
+    justify-content: space-evenly;
+  }
+  .mis-servicios aside {
+    height: 100%;
+    width: 30%;
+  }
+  .mis-servicios main {
+    height: 100%;
+    width: 70%;
+  }
+}
+
+.mis-servicios {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.mis-servicios aside {
+  background-color: #ecf0f1;
+  padding-top: 20px;
+  padding-right: 10px;
+
+}
+/* .mis-servicios main {
+  border-left: 2px solid #bfbebe;
+} */
+
+/* formulario */
+.radios-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar-start-end {
+  padding: 0 10px;
+}

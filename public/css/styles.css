@@ -3,11 +3,17 @@
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
 @import './login.css';
 @import './nav.css';
+@import './home.css';
+
 
 :root {
+  --primario: #5e9e40;
   --color-red: #e02835;
 }
 
+body{
+  height: 100vh;
+}
 img {
   max-width: 100%;
   height: auto;
