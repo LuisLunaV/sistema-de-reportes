@@ -11,6 +11,15 @@
   --color-red: #e02835;
 }
 
+/* util */
+.flex-row-center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* ******* */
+
 body{
   height: 100vh;
 }

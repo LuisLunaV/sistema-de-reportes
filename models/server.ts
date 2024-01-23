@@ -3,7 +3,7 @@ import cors from "cors";
 import hbs from "hbs";
 import path from 'path';
 
-import { loginRouter,registerRouter, homeRouter, reportsRouter } from '../routers/render/index.routes';
+import { loginRouter,registerRouter, homeRouter } from '../routers/render/index.routes';
 
 import usersRouter from "../routers/users";
 
@@ -13,8 +13,7 @@ class Server {
   private pages = {
     login: "/login",
     register: "/register",
-    home: "/home",
-    report: "/reports"
+    home: "/home"
   }
 
   private apiPaths = {
@@ -55,7 +54,6 @@ class Server {
     this.app.use( this.pages.login, loginRouter);
     this.app.use( this.pages.register, registerRouter );
     this.app.use( this.pages.home, homeRouter);
-    this.app.use( this.pages.report, reportsRouter);
   }
 
   router() {

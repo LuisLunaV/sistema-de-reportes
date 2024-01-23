@@ -39,12 +39,11 @@
   height: 90%;
   display: flex;
   flex-direction: row;
-  padding: 10px;
 }
 .mis-servicios aside {
   background-color: #ecf0f1;
   padding-top: 20px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
 
 }
 /* .mis-servicios main {
@@ -59,4 +58,22 @@
 
 .calendar-start-end {
   padding: 0 10px;
+}
+
+
+/* modal */
+
+.contain-view-report{
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+}
+
+.view-report{
+  background-color: #fff;
+  height: 70vh;
+  width: 90%;
 }
