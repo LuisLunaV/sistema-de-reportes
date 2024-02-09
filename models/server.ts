@@ -3,6 +3,7 @@ import cors from "cors";
 import hbs from "hbs";
 import path from 'path';
 
+import { dbConnection } from '../database/config.db'
 import { loginRouter,registerRouter, homeRouter } from '../routers/render/index.routes';
 
 import usersRouter from "../routers/users";
@@ -24,6 +25,9 @@ class Server {
     this.app = express();
     this.port = process.env.PORT || "8080";
 
+    //Ejecutamos la conexion a la BD
+    this.connectDB();
+
     this.middlewares();
     this.router();
     this.render();
@@ -36,6 +40,10 @@ class Server {
      //Establecemos la ubicacion de los archivos de partials
      const filePath = path.resolve(__dirname, '../views/partials');
      hbs.registerPartials( filePath )
+  }
+
+  async connectDB(){
+    await dbConnection();
   }
 
   middlewares() {
